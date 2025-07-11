@@ -72,7 +72,7 @@ class RunCmd extends Command {
     }
 
     // Run cleaning with parallel execution
-    logger.info('⚡ Cleaning (${concurrency} parallel jobs) …');
+    logger.info('⚡ Cleaning ($concurrency parallel jobs) …');
     
     final pool = Pool(concurrency);
     var successCount = 0;

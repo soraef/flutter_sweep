@@ -1,9 +1,9 @@
 name: flutter_sweep
 description: Fast parallel Flutter project cleaner that sweeps build artifacts with smart detection and real-time progress tracking.
 version: 0.2.0
-homepage: https://github.com/fukui/flutter_sweep
-repository: https://github.com/fukui/flutter_sweep
-issue_tracker: https://github.com/fukui/flutter_sweep/issues
+homepage: https://github.com/soraef/flutter_sweep
+repository: https://github.com/soraef/flutter_sweep
+issue_tracker: https://github.com/soraef/flutter_sweep/issues
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
