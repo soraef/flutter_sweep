@@ -1,7 +1,7 @@
 import 'dart:io';
 import 'package:test/test.dart';
-import 'package:flutter_sweep/src/utils/dir_scan.dart';
-import 'package:flutter_sweep/src/utils/size.dart';
+import 'package:flutter_osouji/src/utils/dir_scan.dart';
+import 'package:flutter_osouji/src/utils/size.dart';
 
 void main() {
   group('Directory Scanning', () {

@@ -1,4 +1,4 @@
-# flutter_sweep
+# flutter_osouji
 
 Fast parallel Flutter project cleaner that sweeps build artifacts.
 
@@ -15,11 +15,11 @@ Fast parallel Flutter project cleaner that sweeps build artifacts.
 
 ```bash
 # Install from pub.dev (when published)
-dart pub global activate flutter_sweep
+dart pub global activate flutter_osouji
 
 # Or run locally
 dart pub get
-dart bin/flutter_sweep.dart run
+dart bin/flutter_osouji.dart run
 ```
 
 ## Usage
@@ -28,23 +28,23 @@ dart bin/flutter_sweep.dart run
 
 ```bash
 # Clean all Flutter projects in current directory (default)
-flutter_sweep run
+flutter_osouji run
 
 # Clean projects in specific directory with 8 parallel jobs  
-flutter_sweep run ./my_projects --concurrency=8
+flutter_osouji run ./my_projects --concurrency=8
 
 # Dry run - see what would be cleaned without actually cleaning
-flutter_sweep dry-run
+flutter_osouji dry-run
 
 # Clean with verbose output
-flutter_sweep run --verbose
+flutter_osouji run --verbose
 ```
 
 ### Expected Output
 
 ```console
 # Run mode with real-time scanning progress
-$ flutter_sweep run ./dev --concurrency=8
+$ flutter_osouji run ./dev --concurrency=8
 🔍 Scanning /dev/projects/app1 (0 found)...
 🔍 Scanning /dev/projects/app2 (1 found)...
 🔍 Scanning /dev/projects/app3 (2 found)...
@@ -57,7 +57,7 @@ $ flutter_sweep run ./dev --concurrency=8
 🧹  Finished in 12.7 s. Freed 8.6 GB (11 projects OK, 1 failed)
 
 # Dry run mode
-$ flutter_sweep dry-run
+$ flutter_osouji dry-run
 🔍 Found 12 Flutter projects
 📊 Cleanable sizes:
   📁 /dev/app1               784 MB
@@ -78,13 +78,13 @@ $ flutter_sweep dry-run
 
 ```bash
 # Clean with custom concurrency
-flutter_sweep run --concurrency=4
+flutter_osouji run --concurrency=4
 
 # Exclude example directories  
-flutter_sweep run --exclude "**/example/**"
+flutter_osouji run --exclude "**/example/**"
 
 # Verbose output
-flutter_sweep run --verbose
+flutter_osouji run --verbose
 ```
 
 ## How it Works
@@ -108,29 +108,29 @@ Typical performance: ~1.9s per GB cleaned on modern SSD systems with 8+ cores.
 ```bash
 # Clone and setup
 git clone <repository>
-cd flutter_sweep
+cd flutter_osouji
 dart pub get
 
 # Run tests
 dart test
 
 # Run locally
-dart bin/flutter_sweep.dart run ./test_projects
-dart bin/flutter_sweep.dart dry-run
+dart bin/flutter_osouji.dart run ./test_projects
+dart bin/flutter_osouji.dart dry-run
 
 # Run with global activation (for testing)
 dart pub global activate --source path .
-flutter_sweep run
+flutter_osouji run
 ```
 
 ## Project Structure
 
 ```
-flutter_sweep/
+flutter_osouji/
 ├── bin/
-│   └── flutter_sweep.dart          # CLI entry point
+│   └── flutter_osouji.dart          # CLI entry point
 ├── lib/
-│   ├── flutter_sweep.dart          # Library exports
+│   ├── flutter_osouji.dart          # Library exports
 │   └── src/
 │       ├── commands/
 │       │   ├── run_cmd.dart         # Run command implementation
@@ -141,7 +141,7 @@ flutter_sweep/
 │           ├── clean.dart           # Flutter clean execution
 │           └── logger.dart          # Logging utilities
 ├── test/
-│   └── flutter_sweep_test.dart      # Unit tests
+│   └── flutter_osouji_test.dart      # Unit tests
 └── pubspec.yaml                     # Dependencies
 ```
 

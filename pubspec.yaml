@@ -1,4 +1,4 @@
-name: flutter_sweep
+name: flutter_osouji
 description: Fast parallel Flutter project cleaner that sweeps build artifacts with smart detection and real-time progress tracking.
 version: 0.2.0
 homepage: https://github.com/soraef/flutter_sweep
@@ -19,4 +19,4 @@ dev_dependencies:
   test: ^1.24.0
 
 executables:
-  flutter_sweep:
+  flutter_osouji:
