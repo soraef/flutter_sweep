@@ -1,6 +1,14 @@
 # flutter_osouji
 
-Fast parallel Flutter project cleaner that sweeps build artifacts.
+**おそうじ (osouji)** means "cleaning" in Japanese 🧹
+
+Fast parallel Flutter project cleaner that sweeps build artifacts with smart detection and beautiful progress tracking.
+
+## Why "おそうじ"?
+
+In Japanese culture, cleaning (おそうじ/osouji) is not just about tidiness—it's about creating a fresh, organized environment that promotes productivity and peace of mind. This tool embodies that philosophy by efficiently cleaning up Flutter project build artifacts, giving you a clean slate to work with.
+
+Just like the traditional Japanese practice of year-end cleaning (大掃除/oosouji), flutter_osouji helps you maintain a clutter-free development environment! 🎌
 
 ## Features
 
@@ -14,7 +22,7 @@ Fast parallel Flutter project cleaner that sweeps build artifacts.
 ## Installation
 
 ```bash
-# Install from pub.dev (when published)
+# Install from pub.dev
 dart pub global activate flutter_osouji
 
 # Or run locally
@@ -153,6 +161,12 @@ flutter_osouji/
 4. Add tests for new functionality
 5. Run `dart test` to ensure tests pass
 6. Submit a pull request
+
+## About the Name
+
+**flutter_osouji** combines Flutter development with the Japanese concept of cleaning (おそうじ). In Japan, cleaning is considered a meditative practice that brings clarity and focus. Similarly, this tool brings clarity to your development environment by efficiently removing build clutter.
+
+The name reflects our philosophy: development should be clean, organized, and mindful—just like traditional Japanese practices! 🇯🇵
 
 ## License
 

@@ -1,5 +1,5 @@
 name: flutter_osouji
-description: Fast parallel Flutter project cleaner that sweeps build artifacts with smart detection and real-time progress tracking.
+description: おそうじ - Fast parallel Flutter project cleaner inspired by Japanese cleaning philosophy, with smart detection and real-time progress tracking.
 version: 0.2.0
 homepage: https://github.com/soraef/flutter_sweep
 repository: https://github.com/soraef/flutter_sweep
